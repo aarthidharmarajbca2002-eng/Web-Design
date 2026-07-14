@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Business</title>
+	<title>Coffee Website</title>
 	 <link rel="stylesheet" type="text/css" href="assets/css/coffee.css">
-	 <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css>
-	 <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	 <!--swiper CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!--Font Awesome (for arrows)-->
+  <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>
+  <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Momo+Signature&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Betania+Patmos&family=Momo+Signature&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
-	<!--Header-->
-   <div id="container">
+	<!--Header and Navbar Section-->
+   <header class="main-header" id="container">
+   	<nav class="navbar">
+   		<!--logo -->
 	  <div  class="logo">
-	    <img src="assets/img/coffee1.png">
+	    <img src="assets/img/coffee1.png" alt="Coffee Logo">
 	  </div>
+	  <!--Menu Links -->
 	 <div class="content">
 	 	<ul>
-	 		<li><a href="#">Home</a></li>
-	 		<li><a href="#">About</a></li>
-	 		<li><a href="#">Menu</a></li>
-	 		<li><a href="#">Testimonials</a></li>
-	 		<li><a href="#">Gallery</a></li>
-	 		<li><a href="#">Contact</a></li>
+	 		<li><a href="#wrapper">Home</a></li>
+	 		<li><a href="#About">About</a></li>
+	 		<li><a href="#menu">Menu</a></li>
+	 		<li><a href="#testimonials-section">Testimonials</a></li>
+	 		<li><a href="#gallery">Gallery</a></li>
+	 		<li><a href="#contact">Contact</a></li>
 	 	 </ul>
    </div>
-  </div>
+  </nav>
+</header>
 
 
   <!--navbar-->
@@ -100,40 +107,118 @@
 
 
 <!--testimonials-->
-<div id="testimonials">
-	<h2>TESTIMONIALS</h2>
-  <div class="slider-wrapper">
-	<div class="slider-container">
-	  <div class="testimonials-card">
-		<img src="assets/img/user1.jpg">
-		<h3>Johnson sarah</h3>
-		<p>"Loved the French roast! Perfectly balanced and rich. Will order again!"</p>
+<section id="testimonials-section">
+	<h2 class="section-title">TESTI<span style="color:orange;">MONIALS</span></h2>
+	
+		<div class="slider-container swiper">
+				<ul class="testimonials-list swiper-wrapper">
+					
+					<!--Slide 1 -->
+					<li class="testimonial swiper-slide ">
+             <img src="assets/img/user1.jpg" alt="User" class="user-image">
+		         <h3 class="name">Johnson sarah</h3>
+	    	     <i class="feedback">"Loved the French roast! Perfectly balanced and rich. Will order again!"</i>
+	    	  </li>
+
+	    	  <!-- Slide 2 -->
+	    	  <li class="testimonial swiper-slide">
+             <img src="assets/img/user2.jpg" alt="User" class="user-image">
+		          <h3 class="name">Emily Harris</h3>
+              <i class="feedback">"Excellent quality! Fresh beans and quick delivery. Highly recommend."</i>
+	    	  </li>
+
+	    	  <!-- Slide 3-->
+	    	  <li class="testimonial swiper-slide">
+             <img src="assets/img/user3.jpg" alt="User" class="user-image">
+             <h3 class="name">Michael Brown</h3>
+             <i class="feedback">"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"</i>
+	    	  </li>
+
+	    	  <!-- Slide 4 -->
+	    	  <li class="testimonial swiper-slide">
+             <img src="assets/img/user4.jpg" alt="User" class="user-image">
+             <h3 class="name">Anthony Thompson</h3>
+             <i class="feedback">"Best decat l've tired! Smooth and flavorful.Arrived promptly"</i>
+	    	  </li>
+
+	    	  <!-- Slide 5 -->
+	    	  <li class="testimonial swiper-slide">
+             <img src="assets/img/user5.jpg" alt="User" class="user-image">
+             <h3 class="name">James William </h3>
+             <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fast shipping too!"</i>
+	    	  </li>
+	    	</ul>
+
+	    	<!--pagination dots -->
+	    	<div class="swiper-pagination"></div>
+
+	    	<!--Navigation buttons-->
+	    	<div class="swiper-button-prev"></div>
+	    	<div class="swiper-button-next"></div>
 	  </div>
+</section>
+
+
+<!--Gallery-->
+<section class="gallery-section" id="gallery">
+	<h1 class="gallery-title" style="color: white;">Our  <strong style="color:orange;">Gallery</strong></h1>
+	<div class="gallery-grid">
+	 <div class="gallery-item"><img src="assets/img/coffee1.jpg" alt="Gallery 1"></div>
+	 <div class="gallery-item"><img src="assets/img/salad.jpg" alt="Gallery 2"></div>
+	 <div class="gallery-item"><img src="assets/img/juice1.jpg" alt="Gallery 3"></div>
+	 <div class="gallery-item"><img src="assets/img/salad and coffee.jpg" alt="Gallery 4"></div>
+	 <div class="gallery-item"><img src="assets/img/dosa.jpg" alt="Gallery 5"></div>
+	 <div class="gallery-item"><img src="assets/img/bun.jpg" alt="Gallery 6"></div>	
 	</div>
-	  <div class="testimonial-card">
-         <img src="assets/img/user2.jpg">
-         <h3>Emily Harris</h3>
-         <p>"Excellent quality! Fresh beans and quick delivery. Highly recommend."</p>
-       </div>
-       <div class="testimonial-card">
-         <img src="assets/img/user3.jpg">
-         <h3>Michael Brown</h3>
-         <p>"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"</p>
-       </div>
-       <div class="testimonial-card">
-         <img src="assets/img/user4.jpg">
-         <h3>Anthony Thompson</h3>
-         <p>"Best decat l've tired! Smooth and flavorful.Arrived promptly"</p>
-       </div>
-       <div class="testimonial-card">
-         <img src="assets/img/user5.jpg">
-         <h3>James William </h3>
-         <p>"Great espresso blend! Smooth and bold flavor. Fast shipping too!"</p>
-       </div>
+</section>
+
+<!--Contact Section -->
+<section class="contact-section" id="contact">
+	<h2 class="section-title">CONTACT US</h2>
+
+	<div class="contact-container">
+		<div class="contact-info">
+			<p><i class="fas fa-map-marker-alt"></i> 123 Campsite Avenue, Wilderness, CA 98765</p>
+			<p><i class="fas fa-envelope" ></i> info@coffeeshopwebsite.com</p>
+			<p><i class="fas fa-phone"></i> (123) 456-7890</p>
+			<p><i class="fas fa-clock"></i> Monday - Friday:9:00 AM - 5:00 PM</p>
+			<p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
+			<p><i class="fas fa-calendar-times"></i> Sunday: Closed</p>
+			<p><i class="fas fa-globe"></i> www.codingindiaweb.com</p>
+		</div>
+		<form class="contact-form">
+			<input type="text" placeholder="Your name" required>
+			<input type="email" placeholder="Your email" required>
+			<textarea placeholder="Your Message" rows="5" required></textarea>
+			<button type="submit" class="btn btn-submit">Submit</button>
+		</form>
+	</div>
+</section> 
+
+<!-- Footer Section -->
+<footer class="footer-section">
+	<div class="footer-container">
+		<div class="footer-left">
+	          <p> &copy; 2026 Coffee Shop. All rights reserved.</p>
+    </div>
+    <div class="footer-center">
+    	<a href="#"><i class="fab fa-facebook-f"></i></a>
+    	<a href="#"><i class="fab fa-instagram"></i></a>
+    	<a href="#"><i class="fab fa-twitter"></i></a>
+    </div> 
+    <div class="footer-right">
+    	<a href="#">Privacy & Policy</a>
+    	<span>.</span>
+    	<a href="#">Refund Policy</a>
+    </div>
   </div>
-  <button class="prev-btn"><i class="fa-solid fa-arrow-right"></i></button>
-  <button class="next-btn"><i class="fa-solid fa-arrow-left"></i></button>
-</div>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="assets/js/script.js"></script>
+
 </body>
 </html>
 
